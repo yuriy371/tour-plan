@@ -1,8 +1,15 @@
 * {
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 .container {
-    max-width: 1110px;
-    margin: auto;
-    padding: 0 15px;
+  max-width: 1110px;
+  margin: auto;
+  padding: 0 15px;
 }
+
+body {
+  background: #00f;
+}
+/*# sourceMappingURL=style.css.map */
