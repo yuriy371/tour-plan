@@ -7,6 +7,7 @@
 		padding: 40px 0;
 	}
 	.logo {
+		width: 177px;
 	}
 	&__search {
 		margin: 0 auto 0 108px;
@@ -52,14 +53,26 @@
 			color: $text-color;
 		}
 	}
-	.header-menu {
+	&__menu-burger {
+		display: none;
+	}
+	&-menu {
+		padding: 31px 0;
+		background: $dark;
 		&__list {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			color: $light;
 		}
 
 		&__item {
 		}
 
 		&__link {
+			line-height: 18px;
+			text-transform: uppercase;
+			color: inherit;
 		}
 	}
 }
