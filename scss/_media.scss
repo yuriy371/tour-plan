@@ -8,8 +8,6 @@
 		max-width: 760px;
 	}
 	.header {
-		&-top {
-		}
 		.logo {
 			width: 132px;
 		}
@@ -20,24 +18,8 @@
 			&__input {
 				width: 340px;
 			}
-
-			&__btn {
-			}
-		}
-		.user {
-			&__avatar {
-			}
-
-			&__name {
-			}
 		}
 		&-menu {
-			&__list {
-			}
-
-			&__item {
-			}
-
 			&__link {
 				font-size: 12px;
 				line-height: 15px;
@@ -50,9 +32,6 @@
 		max-width: 570px;
 	}
 	.header {
-		&-top {
-		}
-
 		&__search {
 			margin: auto;
 		}
@@ -60,18 +39,6 @@
 			&__input {
 				width: 340px;
 			}
-
-			&__btn {
-			}
-		}
-		.user {
-			&__avatar {
-			}
-
-			&__name {
-			}
-		}
-		&__menu-burger {
 		}
 		.menu-button {
 			display: flex;
@@ -88,12 +55,6 @@
 			}
 		}
 		&-menu {
-			&__list {
-			}
-
-			&__item {
-			}
-
 			&__link {
 				font-size: 12px;
 				line-height: 15px;
@@ -102,6 +63,33 @@
 		.search,
 		&-menu,
 		&__user {
+			display: none !important;
+		}
+	}
+	.hotel {
+		&-info {
+			&__text {
+				width: 100%;
+			}
+			&__name {
+				margin: 10px 0 0 0;
+			}
+		}
+
+		&-wrapper {
+			justify-content: space-between;
+		}
+		.stars {
+			flex-basis: auto;
+		}
+		&-name {
+			flex-basis: 100%;
+		}
+		.offer {
+			order: -1;
+			margin: 0;
+		}
+		.rating {
 			display: none !important;
 		}
 	}
