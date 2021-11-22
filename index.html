@@ -16,7 +16,11 @@
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
     rel="stylesheet">
   <!-- style -->
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/style.css" />
+  <!-- scripts -->
+  <script src="./js/swiper-bundle.min.js" defer></script>
+  <script src="./js/main.js" defer></script>
 </head>
 
 <body>
@@ -126,6 +130,45 @@
         <!-- /.hotel-info__right -->
       </div>
       <!-- /.hotel-info -->
+      <div class="hotel-grid">
+        <div class="slider">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="./img/slider-img-1.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/slider-img-2.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/slider-img-3.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/slider-img-4.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/slider-img-5.jpg" alt="">
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <button class="slider-button slider-button__prev">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#arrow-left"></use>
+              </svg>
+            </button>
+            <button class="slider-button slider-button__next">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- /.swiper -->
+        </div>
+        <!-- /.slider -->
+      </div>
+      <!-- /.hotel-grid -->
     </div>
     <!-- /.container -->
   </section>

@@ -26,6 +26,16 @@
 			}
 		}
 	}
+	.slider {
+		&-button {
+			&__next {
+				right: 15px;
+			}
+			&__prev {
+				left: 15px;
+			}
+		}
+	}
 }
 @media (max-width: 768px) {
 	.container {
@@ -93,16 +103,49 @@
 			display: none !important;
 		}
 	}
+	.swiper {
+		height: 330px;
+		// height: 100%;
+	}
+	.slider {
+		width: 100%;
+		&-button {
+			width: 12px;
+			height: 12px;
+			& .icon {
+				width: 12px;
+				height: 12px;
+				fill: $light;
+			}
+			&__next {
+				right: 7px;
+			}
+			&__prev {
+				left: 7px;
+			}
+		}
+	}
 }
 @media (max-width: 576px) {
 	.container {
-		max-width: 960px;
+		max-width: 95%;
 	}
+
 	.header {
 		.logo {
 			width: 99px;
 		}
 	}
+	.swiper {
+		height: 264px;
+	}
 }
 @media (max-width: 480px) and (min-width: 320px) {
+	.container {
+		max-width: 95%;
+	}
+	.swiper {
+		height: 169px;
+		// height: 166px;
+	}
 }
