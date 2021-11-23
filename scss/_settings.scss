@@ -1,11 +1,16 @@
 .container {
 	max-width: 1110px;
 	margin: auto;
-	padding: 0 15px;
+	// padding: 0 15px;
 }
 body {
 	font-family: "Mulish", sans-serif;
 	// font-family: "Nunito", sans-serif;
 	background: $secondary;
 	color: $text-color;
+}
+.button {
+	background: $primary;
+	border-radius: 4px;
+	color: $light;
 }
