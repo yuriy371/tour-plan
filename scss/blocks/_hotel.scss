@@ -79,21 +79,22 @@
 			margin: 2px 0 0 0;
 		}
 	}
-}
-.swiper {
-	position: relative;
-	width: 100%;
-	height: 450px;
-	border-radius: 8px;
-	&::after {
-		content: "";
-		position: absolute;
+
+	&-slider {
+		position: relative;
 		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-		z-index: 10;
+		height: 450px;
+		border-radius: 8px;
+		&::after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+			z-index: 10;
+		}
 	}
 }
 .slider {

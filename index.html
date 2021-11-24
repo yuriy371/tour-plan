@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/style.css" />
   <!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-parallax.js@1.5.0/parallax.min.js" defer></script>
   <script src="./js/swiper-bundle.min.js" defer></script>
   <script src="./js/main.js" defer></script>
 </head>
@@ -132,7 +134,7 @@
       <!-- /.hotel-info -->
       <div class="hotel-grid">
         <div class="slider">
-          <div class="swiper">
+          <div class="swiper hotel-slider">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
@@ -230,6 +232,270 @@
     <!-- /.container -->
   </section>
   <!-- /.hotel -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-wrapper">
+        <h2 class="newsletter-title">
+          subscribe to our
+          <span class="newsletter-title__strong">Newsletter</span>
+        </h2>
+        <form action="#" class="subscribe newsletter__subscribe">
+          <input type="text" placeholder="Your email address" class="subscribe__input" />
+          <button class="subscribe__btn">
+            Send
+          </button>
+        </form>
+      </div>
+      <!-- /.newsletter-wrapper -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.newsletter -->
+  <section class="reviews">
+    <div class="container">
+      <h2 class="reviews-title">What people think about us</h2>
+      <div class="swiper reviews-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <fieldset class="reviews-slider__profile">
+                <legend class="reviews-slider__legend-avatar">
+                  <img src="./img/avatar-reviews-1.jpg" alt="" class="reviews-slider__avatar">
+                </legend>
+                <h3 class="reviews-slider__username">
+                  Megan Fox
+                </h3>
+                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                <div class="reviews-slider__rating">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </div>
+                <!-- /.reviews-slider__rating -->
+                <p class="reviews-slider__text">
+                  It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very
+                  well.
+                  Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles
+                  were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff
+                  was
+                  also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places
+                  but
+                  self location in a narrow street is not good. Overall it was a good experience and could recommend.
+                </p>
+              </fieldset>
+              <!-- /.reviews-slider__profile -->
+            </div>
+            <!-- /.revies-slider__item -->
+
+          </div>
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <fieldset class="reviews-slider__profile">
+                <legend class="reviews-slider__legend-avatar">
+                  <img src="./img/avatar-reviews-2.jpg" alt="" class="reviews-slider__avatar">
+                </legend>
+                <h3 class="reviews-slider__username">
+                  John Stone
+                </h3>
+                <span class="reviews-slider__date">Stayed 10 Nov, 2015</span>
+                <div class="reviews-slider__rating">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </div>
+                <!-- /.reviews-slider__rating -->
+                <p class="reviews-slider__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas porro voluptatibus dolorem. Deserunt
+                  deleniti voluptates impedit nostrum tempora possimus nemo culpa nesciunt dolore, obcaecati dolor
+                  cupiditate eius tempore dignissimos! Quod voluptatibus rerum debitis cupiditate odio suscipit sit ex
+                  iure corrupti quo dolorem vel sint, praesentium, porro animi. Blanditiis, veritatis placeat.
+                </p>
+              </fieldset>
+              <!-- /.reviews-slider__profile -->
+            </div>
+            <!-- /.revies-slider__item -->
+
+          </div>
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <fieldset class="reviews-slider__profile">
+                <legend class="reviews-slider__legend-avatar">
+                  <img src="./img/avatar-reviews-3.jpg" alt="" class="reviews-slider__avatar">
+                </legend>
+                <h3 class="reviews-slider__username">
+                  Peter Stanbridge
+                </h3>
+                <span class="reviews-slider__date">Stayed 08 Nov, 2011</span>
+                <div class="reviews-slider__rating">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </div>
+                <!-- /.reviews-slider__rating -->
+                <p class="reviews-slider__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis suscipit consequatur accusantium ex
+                  aut beatae error sunt vero, impedit in officia cupiditate, vitae deserunt veritatis quam blanditiis
+                  eaque, amet magni dolore sapiente placeat! Repellendus dolorum deleniti delectus vel hic ipsam unde
+                  natus. Aperiam delectus dolor iste sed voluptas laborum nesciunt doloribus, recusandae velit quasi
+                  ratione quod, accusamus magni inventore rerum minus, ea perferendis nemo amet dicta dolore? Mollitia
+                  facilis velit sit impedit, incidunt assumenda omnis unde perspiciatis exercitationem soluta, minima
+                  quod quia quos vel dolorem deserunt eius ipsam debitis earum fugit voluptatum accusantium aut nemo.
+                  Nulla earum error repudiandae eaque?
+                </p>
+              </fieldset>
+              <!-- /.reviews-slider__profile -->
+            </div>
+            <!-- /.revies-slider__item -->
+
+          </div>
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <fieldset class="reviews-slider__profile">
+                <legend class="reviews-slider__legend-avatar">
+                  <img src="./img/avatar-reviews-4.jpg" alt="" class="reviews-slider__avatar">
+                </legend>
+                <h3 class="reviews-slider__username">
+                  Tamzyn French
+                </h3>
+                <span class="reviews-slider__date">Stayed 19 Nov, 2010</span>
+                <div class="reviews-slider__rating">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </div>
+                <!-- /.reviews-slider__rating -->
+                <p class="reviews-slider__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste iusto minima assumenda totam voluptates
+                  in illo voluptas ut fugit inventore velit, ab libero sed enim cum. Sed eligendi magnam quam blanditiis
+                  enim! Iste nesciunt ab quidem numquam libero delectus provident nihil quaerat error obcaecati
+                  doloribus praesentium nulla unde exercitationem non amet at odio, quae eaque fuga? Adipisci voluptatem
+                  maiores consectetur explicabo porro velit veritatis reiciendis assumenda magnam iste saepe, ea
+                  architecto ducimus laborum mollitia possimus distinctio dolor nesciunt minima? A!
+                </p>
+              </fieldset>
+              <!-- /.reviews-slider__profile -->
+            </div>
+            <!-- /.revies-slider__item -->
+
+          </div>
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <fieldset class="reviews-slider__profile">
+                <legend class="reviews-slider__legend-avatar">
+                  <img src="./img/avatar-reviews-5.jpg" alt="" class="reviews-slider__avatar">
+                </legend>
+                <h3 class="reviews-slider__username">
+                  Mia Wong
+                </h3>
+                <span class="reviews-slider__date">Stayed 01 Nov, 2001</span>
+                <div class="reviews-slider__rating">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </div>
+                <!-- /.reviews-slider__rating -->
+                <p class="reviews-slider__text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus iure ipsum magnam, obcaecati
+                  corporis labore rerum earum debitis deserunt mollitia at, alias exercitationem doloribus? Autem
+                  blanditiis aliquid, modi alias possimus maxime minus illo facilis nisi quasi pariatur cumque harum
+                  recusandae nulla sed, eius labore. Nobis asperiores rem in odio ex distinctio esse. Ut velit quod
+                  delectus repellendus accusantium, veritatis consectetur. Unde illo expedita quae quaerat enim
+                  excepturi molestiae, consequatur blanditiis corporis ex omnis rerum ea nemo vero quas nihil tenetur
+                  doloremque, et totam veritatis dolore? Dolorem magnam sed assumenda sint, modi iusto non deserunt
+                  natus perferendis corrupti expedita libero similique exercitationem, eius eveniet? Nostrum,
+                  repellendus. Dignissimos, asperiores reprehenderit! Vitae obcaecati deserunt, magni quasi inventore
+                  fugiat deleniti praesentium ipsum dolor maxime eos. Quidem nihil delectus perferendis explicabo nam
+                  et, molestias, repellendus itaque, totam est ullam cumque vitae ipsa dolores. Necessitatibus
+                  accusantium, doloribus ducimus qui commodi minus? Consequatur nam harum voluptates ullam!
+                </p>
+              </fieldset>
+              <!-- /.reviews-slider__profile -->
+            </div>
+            <!-- /.revies-slider__item -->
+
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <button class="reviews-button reviews-button__prev">
+          <svg class="icon">
+            <use xlink:href="img/sprite.svg#arrow-left"></use>
+          </svg>
+        </button>
+        <button class="reviews-button reviews-button__next">
+          <svg class="icon">
+            <use xlink:href="img/sprite.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- /.reviews-slider -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.revies -->
+
+
 </body>
 
 </html>

@@ -1,0 +1,119 @@
+.reviews {
+	padding: 40px 0 70px 0;
+	&-title {
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 45px;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0 0 70px 0;
+	}
+
+	&-slider {
+		position: relative;
+		&__item {
+			display: flex;
+			justify-content: center;
+		}
+
+		&__profile {
+			position: relative;
+			max-width: 731px;
+			background: $light;
+			border-radius: 8px;
+			padding: 0;
+			&::before {
+				content: "";
+				position: absolute;
+				left: 64px;
+				top: -33px;
+				width: 70px;
+				height: 40px;
+				background: url("/img/quote-left.svg") no-repeat;
+			}
+			&::after {
+				content: "";
+				position: absolute;
+				right: 60px;
+				top: 82px;
+				width: 70px;
+				height: 40px;
+				background: url("/img/quote-right.svg") no-repeat;
+			}
+		}
+
+		&__legend-avatar,
+		&__username,
+		&__date,
+		&__rating {
+			margin: auto;
+			text-align: center;
+		}
+
+		&__avatar {
+			width: 90px;
+			height: 90px;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+
+		&__username {
+			text-align: center;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 15px;
+			color: $primary;
+			margin: 9px 0 10px 0;
+		}
+
+		&__date {
+			display: block;
+			text-align: center;
+			font-size: 10px;
+			line-height: 13px;
+			color: $dark;
+			margin: 0 0 4px 0;
+		}
+
+		&__rating {
+			& .icon {
+				width: 8px;
+				height: 8px;
+				fill: #f2994a;
+			}
+		}
+
+		&__text {
+			position: relative;
+			font-size: 12px;
+			line-height: 160%;
+			text-align: justify;
+			padding: 0 97px;
+			margin: 31px 0;
+			z-index: 80;
+		}
+	}
+
+	&-button {
+		position: absolute;
+		top: 50%;
+		z-index: 99;
+		transform: translateY(-50%);
+		width: 30px;
+		height: 30px;
+		background: transparent;
+		cursor: pointer;
+		& .icon {
+			width: 30px;
+			height: 30px;
+			fill: #828282;
+		}
+		&__prev {
+			left: 18px;
+		}
+
+		&__next {
+			right: 18px;
+		}
+	}
+}
