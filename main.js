@@ -21,6 +21,6 @@ const reviewsSlider = new Swiper('.reviews-slider', {
 	},
 });
 
-$('.newsletter').parallax({ imageSrc: './img/bg-news.jpg' });
+$('.newsletter').parallax({ imageSrc: '/img/bg-news.jpg' });
 
 // document.body.contentEditable = true
