@@ -1,0 +1,182 @@
+.footer {
+	background: $dark;
+	color: $light;
+	padding: 108px 0 46px 0;
+	&-wrapper {
+		display: grid;
+		grid-template-columns: repeat(4, minmax(min-content, 1fr));
+		gap: 20px;
+		grid-auto-rows: minmax(40px, min-content);
+	}
+
+	&__logo {
+		width: 153px;
+		align-self: stretch;
+		grid-row: 1 / 3;
+	}
+
+	&__categories {
+		grid-row: 1 / 4;
+		margin: 0 0 0 3px;
+	}
+
+	&__additional {
+		margin: 0 0 0 5px;
+	}
+
+	&__legal {
+		margin: 0 0 0 68px;
+	}
+
+	&__list {
+	}
+
+	&__title {
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 23px;
+		margin: 0 0 16px 0;
+		text-transform: uppercase;
+		&--inline {
+			margin: 0 43px 0 0;
+		}
+		&--mb-2 {
+			margin: 0 0 34px 0;
+		}
+		&--mb-3 {
+			margin: 11px 0 30px 0;
+		}
+	}
+
+	&__ul {
+	}
+
+	&__item {
+		display: flex;
+		font-size: 14px;
+		line-height: 160%;
+		color: $footer-text;
+
+		&--mb-2 {
+			&:nth-child(1) {
+				margin: 0 0 13px 0;
+			}
+			&:nth-child(2) {
+				margin: 0 0 20px 0;
+			}
+		}
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	&__icon-wrapper {
+		min-width: 40px;
+		margin: 5px 0 0 5px;
+	}
+
+	&__link {
+		color: $footer-text;
+	}
+
+	&__social-network {
+		display: flex;
+		align-items: flex-start;
+		grid-row: 2 / 4;
+		grid-column: span 2;
+		margin: 2px 0 0 5px;
+	}
+
+	&__social-links {
+		display: flex;
+		align-items: center;
+		min-width: 83px;
+		justify-content: space-between;
+	}
+
+	&__contact-details {
+		grid-column: span 2;
+		margin: 0 0 0 -3px;
+	}
+
+	&__text {
+		margin: 0 0 24px 0;
+		color: $footer-text;
+	}
+
+	&__contact-form {
+		grid-column: span 2;
+		margin: -1px 0 65px 5px;
+	}
+
+	&__form {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__input {
+		min-height: 50px;
+		flex-basis: 47%;
+		border-radius: 4px;
+		padding: 0 23px;
+		margin: 0 0 15px 0;
+	}
+
+	&__message {
+		height: 123px;
+		padding: 18px 23px;
+		flex-basis: 100%;
+		border-radius: 4px;
+		resize: none;
+		margin: 0 0 22px 0;
+	}
+
+	&__button {
+		min-width: 160px;
+		height: 50px;
+		padding: 18px;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	&__info {
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 15px;
+	}
+	&__info-doc {
+	}
+}
+.info-doc {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	grid-column: 2/5;
+	margin-left: 131px;
+	&__list {
+		display: flex;
+		font-size: 12px;
+		line-height: 15px;
+		margin: 9px 0 0 0;
+	}
+	&__item {
+		margin: 0 13px 0 0;
+		&:last-child {
+			margin: 0;
+		}
+	}
+	&__link {
+		color: $light;
+	}
+	&__img-card {
+		width: 136px;
+	}
+}
+.icon {
+	width: 20px;
+	height: 20px;
+	fill: $footer-text;
+}
