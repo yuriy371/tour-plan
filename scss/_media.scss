@@ -169,46 +169,11 @@
 			margin: 0;
 		}
 
-		&__list {
-		}
-
-		&__title {
-			&--inline {
-			}
-			&--mb-2 {
-			}
-			&--mb-3 {
-			}
-		}
-
-		&__ul {
-		}
-
-		&__item {
-			&--mb-2 {
-				&:nth-child(1) {
-				}
-				&:nth-child(2) {
-				}
-			}
-			&:last-child {
-			}
-		}
-
-		&__icon-wrapper {
-		}
-
-		&__link {
-		}
-
 		&__social-network {
 			grid-row: 1/2;
 			grid-column: span 4;
 			align-self: center;
 			margin: 0 0 0 -15px;
-		}
-
-		&__social-links {
 		}
 
 		&__contact-details {
@@ -217,43 +182,15 @@
 			margin: 12px 0 0 0;
 		}
 
-		&__text {
-		}
-
 		&__contact-form {
 			grid-column: span 5;
 			grid-row: 4;
 			margin: 22px 0 25px 0;
 		}
-
-		&__form {
-		}
-
-		&__input {
-		}
-
-		&__message {
-		}
-
-		&__button {
-		}
-
-		&__info {
-		}
 	}
 	.info-doc {
 		grid-column: 1/7;
 		margin-left: 0;
-		&__list {
-		}
-		&__item {
-			&:last-child {
-			}
-		}
-		&__link {
-		}
-		&__img-card {
-		}
 	}
 }
 @media (max-width: 768px) {
@@ -450,91 +387,9 @@
 		object-position: center top;
 	}
 	.footer {
-		&-wrapper {
-		}
-
-		&__logo {
-		}
-
-		&__categories {
-		}
-
-		&__additional {
-		}
-
-		&__legal {
-		}
-
-		&__list {
-		}
-
-		&__title {
-			&--inline {
-			}
-			&--mb-2 {
-			}
-			&--mb-3 {
-			}
-		}
-
-		&__ul {
-		}
-
-		&__item {
-			&--mb-2 {
-				&:nth-child(1) {
-				}
-				&:nth-child(2) {
-				}
-			}
-			&:last-child {
-			}
-		}
-
-		&__icon-wrapper {
-		}
-
-		&__link {
-		}
-
-		&__social-network {
-		}
-
-		&__social-links {
-		}
-
-		&__contact-details {
-		}
-
-		&__text {
-		}
-
 		&__contact-form {
 			grid-column: span 6;
 		}
-
-		&__form {
-		}
-
-		&__input {
-		}
-
-		&__message {
-		}
-
-		&__button {
-		}
-
-		&__info {
-		}
-	}
-	.logo {
-	}
-	.icon {
-	}
-	.input {
-	}
-	.button {
 	}
 }
 @media (max-width: 576px) {
@@ -588,9 +443,6 @@
 			grid-column: 1;
 		}
 
-		&__list {
-		}
-
 		&__title {
 			&--inline {
 				margin: 0 0 20px 0;
@@ -603,26 +455,6 @@
 			}
 		}
 
-		&__ul {
-		}
-
-		&__item {
-			&--mb-2 {
-				&:nth-child(1) {
-				}
-				&:nth-child(2) {
-				}
-			}
-			&:last-child {
-			}
-		}
-
-		&__icon-wrapper {
-		}
-
-		&__link {
-		}
-
 		&__social-network {
 			flex-direction: column;
 			grid-row: 2;
@@ -630,16 +462,10 @@
 			margin: 0;
 		}
 
-		&__social-links {
-		}
-
 		&__contact-details {
 			grid-row: 6;
 			grid-column: 1;
 			margin: 10px 0 0 0;
-		}
-
-		&__text {
 		}
 
 		&__contact-form {
@@ -679,14 +505,6 @@
 		align-items: flex-start;
 		&__list {
 			margin: 0 0 10px 0;
-		}
-		&__item {
-			&:last-child {
-			}
-		}
-		&__link {
-		}
-		&__img-card {
 		}
 	}
 }
