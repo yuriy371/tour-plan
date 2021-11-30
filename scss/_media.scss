@@ -197,13 +197,60 @@
 	.container {
 		max-width: 570px;
 	}
+	body {
+		padding: 70px 0 0 0;
+	}
 	.header {
+		&__search,
+		&-menu,
+		&__user {
+			display: none !important;
+			position: fixed;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 70px;
+		}
+		&__mobile--fixed {
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			z-index: 100;
+		}
+		&-top {
+			padding: 28px 0;
+		}
+		&__user,
+		&__search {
+			&--mobile-hidden {
+				display: none;
+			}
+			&--mobile-visible {
+				display: flex !important;
+				position: relative;
+				top: 0;
+			}
+		}
+		&__user {
+			flex-direction: column;
+			justify-content: center;
+		}
+		.user {
+			&__avatar {
+				margin: 0 0 10px 0;
+			}
+			&__name {
+				padding: 0;
+				color: $light;
+			}
+		}
 		&__search {
 			margin: auto;
 		}
 		.search {
 			&__input {
-				width: 340px;
+				width: 295px;
 			}
 		}
 		.menu-button {
@@ -220,16 +267,27 @@
 				background: $text-color;
 			}
 		}
+
 		&-menu {
+			&__visible {
+				display: block !important;
+			}
+			&__list {
+				flex-direction: column;
+			}
+			&__item {
+				margin: 0 0 20px 0;
+				&--mobile-visible {
+					display: block !important;
+				}
+				&:last-child {
+					margin: 0;
+				}
+			}
 			&__link {
 				font-size: 12px;
 				line-height: 15px;
 			}
-		}
-		.search,
-		&-menu,
-		&__user {
-			display: none !important;
 		}
 	}
 	.hotel {

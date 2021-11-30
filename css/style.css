@@ -548,6 +548,10 @@ body {
   color: #ffffff;
 }
 
+.header-menu__item--mobile-visible {
+  display: none !important;
+}
+
 .header-menu__link {
   line-height: 18px;
   text-transform: uppercase;
@@ -1799,11 +1803,58 @@ body {
   .container {
     max-width: 570px;
   }
+  body {
+    padding: 70px 0 0 0;
+  }
+  .header__search, .header-menu, .header__user {
+    display: none !important;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 70px;
+  }
+  .header__mobile--fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+  }
+  .header-top {
+    padding: 28px 0;
+  }
+  .header__user--mobile-hidden, .header__search--mobile-hidden {
+    display: none;
+  }
+  .header__user--mobile-visible, .header__search--mobile-visible {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    position: relative;
+    top: 0;
+  }
+  .header__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .user__avatar {
+    margin: 0 0 10px 0;
+  }
+  .header .user__name {
+    padding: 0;
+    color: #ffffff;
+  }
   .header__search {
     margin: auto;
   }
   .header .search__input {
-    width: 340px;
+    width: 295px;
   }
   .header .menu-button {
     display: -webkit-box;
@@ -1826,12 +1877,27 @@ body {
     height: 1px;
     background: #333333;
   }
+  .header-menu__visible {
+    display: block !important;
+  }
+  .header-menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-menu__item {
+    margin: 0 0 20px 0;
+  }
+  .header-menu__item--mobile-visible {
+    display: block !important;
+  }
+  .header-menu__item:last-child {
+    margin: 0;
+  }
   .header-menu__link {
     font-size: 12px;
     line-height: 15px;
-  }
-  .header .search, .header-menu, .header__user {
-    display: none !important;
   }
   .hotel-info__text {
     width: 100%;

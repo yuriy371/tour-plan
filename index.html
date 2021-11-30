@@ -26,19 +26,19 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header header__mobile--fixed">
     <div class="container">
       <div class="header-top">
         <a href="#" class="logo">
           <img src="img/header-logo.svg" alt="" />
         </a>
-        <form action="#" class="search header__search">
+        <form action="#" class="search header__search header__search--mobile-hidden">
           <input type="text" placeholder="Search Location" class="search__input" />
           <button class="search__btn">
             <img src="img/search.svg" alt="" />
           </button>
         </form>
-        <a href="#" class="user header__user">
+        <a href="#" class="user header__user header__user--mobile-hidden">
           <img src="img/avatar.jpg" alt="" class="user__avatar" />
           <span class="user__name">Nathan</span>
         </a>
@@ -54,6 +54,20 @@
     <nav class="header-menu">
       <div class="container">
         <ul class="header-menu__list">
+          <li class="header-menu__item header-menu__item--mobile-visible">
+            <a href="#" class="user header__user header__user--mobile-visible">
+              <img src="img/avatar.jpg" alt="" class="user__avatar" />
+              <span class="user__name">Nathan</span>
+            </a>
+          </li>
+          <li class="header-menu__item header-menu__item--mobile-visible">
+            <form action="#" class="search header__search header__search--mobile-visible">
+              <input type="text" placeholder="Search Location" class="search__input" />
+              <button class="search__btn">
+                <img src="img/search.svg" alt="" />
+              </button>
+            </form>
+          </li>
           <li class="header-menu__item"><a href="#" class="header-menu__link">All Deals</a></li>
           <li class="header-menu__item"><a href="#" class="header-menu__link">Hotels</a></li>
           <li class="header-menu__item"><a href="#" class="header-menu__link">Activities</a></li>
