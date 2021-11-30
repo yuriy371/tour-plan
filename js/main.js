@@ -25,8 +25,8 @@ const reviewsSlider = new Swiper('.reviews-slider', {
 let menuButton = document.querySelector(".menu-button")
 
 menuButton.addEventListener("click", () => {
-	console.log(15);
 	document.querySelector(".header-menu").classList.toggle("header-menu__visible")
+	document.querySelector("body").classList.toggle("body__hidden")
 })
 
 $('.newsletter').parallax({ imageSrc: '/img/bg-news.jpg' });

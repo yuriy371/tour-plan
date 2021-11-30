@@ -1806,6 +1806,9 @@ body {
   body {
     padding: 70px 0 0 0;
   }
+  .body__hidden {
+    overflow: hidden;
+  }
   .header__search, .header-menu, .header__user {
     display: none !important;
     position: fixed;
@@ -1879,6 +1882,9 @@ body {
   }
   .header-menu__visible {
     display: block !important;
+  }
+  .header-menu__visible body {
+    overflow: hidden;
   }
   .header-menu__list {
     -webkit-box-orient: vertical;
