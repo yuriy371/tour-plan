@@ -438,6 +438,10 @@ template {
   margin: auto;
 }
 
+html {
+  overflow: scroll;
+}
+
 body {
   font-family: "Mulish", sans-serif;
   background: #f5fafe;
