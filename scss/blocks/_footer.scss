@@ -73,10 +73,20 @@
 	&__icon-wrapper {
 		min-width: 40px;
 		margin: 5px 0 0 5px;
+		& .icon {
+			width: 20px;
+			height: 20px;
+			fill: $footer-text;
+		}
 	}
 
 	&__link {
 		color: $footer-text;
+		& .icon {
+			width: 20px;
+			height: 20px;
+			fill: $footer-text;
+		}
 	}
 
 	&__social-network {
@@ -174,9 +184,4 @@
 	&__img-card {
 		width: 136px;
 	}
-}
-.icon {
-	width: 20px;
-	height: 20px;
-	fill: $footer-text;
 }
