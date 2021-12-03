@@ -1013,7 +1013,7 @@ body {
   top: -33px;
   width: 70px;
   height: 40px;
-  background: url("/img/quote-left.svg") no-repeat;
+  background: url("./img/quote-left.svg") no-repeat;
 }
 
 .reviews-slider__profile::after {
@@ -1023,7 +1023,7 @@ body {
   top: 82px;
   width: 70px;
   height: 40px;
-  background: url("/img/quote-right.svg") no-repeat;
+  background: url("./img/quote-right.svg") no-repeat;
 }
 
 .reviews-slider__legend-avatar, .reviews-slider__username, .reviews-slider__date, .reviews-slider__rating {
