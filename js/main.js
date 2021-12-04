@@ -31,10 +31,20 @@ let closeModalBtn = $(".modal__close");
 let modalOverlay = $(".modal__overlay");
 let modalDialog = $(".modal__dialog");
 
+let div = document.createElement('div');
+
+div.style.overflowY = 'scroll';
+div.style.width = '50px';
+div.style.height = '50px';
+document.body.append(div);
+let scrollWidth = div.offsetWidth - div.clientWidth;
+div.remove();
+
 let openModal = () => {
 	modalOverlay.addClass("modal__overlay--visible")
 	modalDialog.addClass("modal__dialog--visible")
 	$("body").addClass("body__hidden")
+	$("body").css("paddingRight", scrollWidth)
 };
 
 let closeModal = (e) => {
@@ -42,6 +52,7 @@ let closeModal = (e) => {
 	modalOverlay.removeClass("modal__overlay--visible")
 	modalDialog.removeClass("modal__dialog--visible")
 	$("body").removeClass("body__hidden")
+	$("body").css("paddingRight", 0)
 };
 
 menuButton.addEventListener("click", () => {
@@ -57,7 +68,9 @@ $(document).on('keydown', (e) => {
 		modalOverlay.removeClass("modal__overlay--visible")
 		modalDialog.removeClass("modal__dialog--visible")
 		$("body").removeClass("body__hidden")
+		$("body").css("paddingRight", 0)
 		return false;
 	}
 });
+
 // document.body.contentEditable = true
