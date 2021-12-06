@@ -440,6 +440,7 @@ template {
 
 body {
   font-family: "Mulish", sans-serif;
+  font-display: swap;
   background: #f5fafe;
   color: #333333;
 }
