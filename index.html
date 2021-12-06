@@ -22,6 +22,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-parallax.js@1.5.0/parallax.min.js" defer></script>
   <script src="./js/swiper-bundle.min.js" defer></script>
+  <script src="./js/jquery.validate.min.js" defer></script>
+  <script src="./js/jquery.mask.min.js" defer></script>
   <script src="./js/main.js" defer></script>
 </head>
 
@@ -39,7 +41,7 @@
           </button>
         </form>
         <a href="#" class="user header__user header__user--mobile-hidden">
-          <img src="img/avatar.jpg" alt="" class="user__avatar" />
+          <img src="img/avatar.webp" alt="" class="user__avatar" />
           <span class="user__name">Nathan</span>
         </a>
         <button class="menu-button header__menu-burger">
@@ -56,7 +58,7 @@
         <ul class="header-menu__list">
           <li class="header-menu__item header-menu__item--mobile-visible">
             <a href="#" class="user header__user header__user--mobile-visible">
-              <img src="img/avatar.jpg" alt="" class="user__avatar" />
+              <img src="img/avatar.webp" alt="" class="user__avatar" />
               <span class="user__name">Nathan</span>
             </a>
           </li>
@@ -153,19 +155,19 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <img class="swiper-slide__img" src="./img/slider-img-1.jpg" alt="">
+                <img class="swiper-slide__img" src="./img/slider-img-1.webp" alt="">
               </div>
               <div class="swiper-slide">
-                <img class="swiper-slide__img" src="./img/slider-img-2.jpg" alt="">
+                <img class="swiper-slide__img" src="./img/slider-img-2.webp" alt="">
               </div>
               <div class="swiper-slide">
-                <img class="swiper-slide__img" src="./img/slider-img-3.jpg" alt="">
+                <img class="swiper-slide__img" src="./img/slider-img-3.webp" alt="">
               </div>
               <div class="swiper-slide">
-                <img class="swiper-slide__img" src="./img/slider-img-4.jpg" alt="">
+                <img class="swiper-slide__img" src="./img/slider-img-4.webp" alt="">
               </div>
               <div class="swiper-slide">
-                <img class="swiper-slide__img" src="./img/slider-img-5.jpg" alt="">
+                <img class="swiper-slide__img" src="./img/slider-img-5.webp" alt="">
               </div>
             </div>
             <!-- If we need navigation buttons -->
@@ -257,7 +259,7 @@
             Flash Offer
           </span>
           <div class="wrapper-img">
-            <img src="./img/package-img-1.png" alt="" class="package__img img-big">
+            <img src="./img/package-img-1.webp" alt="" class="package__img img-big">
           </div>
           <!-- /.wrapper-img -->
           <div class="package__info info-big">
@@ -338,7 +340,7 @@
           <span class="package__offer">
             Flash Offer
           </span>
-          <img src="./img/package-img-2.png" alt="" class="package__img">
+          <img src="./img/package-img-2.webp" alt="" class="package__img">
           <div class="package__info">
             <h3 class="package__name-hotel">
               LUX* Belle Mare
@@ -395,7 +397,7 @@
           <span class="package__offer">
             Flash Offer
           </span>
-          <img src="./img/package-img-3.png" alt="" class="package__img">
+          <img src="./img/package-img-3.webp" alt="" class="package__img">
           <div class="package__info">
             <h3 class="package__name-hotel">
               White Palace
@@ -452,7 +454,7 @@
           <span class="package__offer">
             Flash Offer
           </span>
-          <img src="./img/package-img-4.png" alt="" class="package__img">
+          <img src="./img/package-img-4.webp" alt="" class="package__img">
           <div class="package__info">
             <h3 class="package__name-hotel">
               Luxury Place
@@ -509,7 +511,7 @@
           <span class="package__offer">
             Flash Offer
           </span>
-          <img src="./img/package-img-5.png" alt="" class="package__img">
+          <img src="./img/package-img-5.webp" alt="" class="package__img">
           <div class="package__info">
             <h3 class="package__name-hotel">
               Hotel Five Star
@@ -575,8 +577,11 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-          <input type="text" name="email" placeholder="Your email address" class="subscribe__input" />
+        <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
+          <div class="newsletter__input-group">
+            <input type="email" name="email" placeholder="Your email address" class="subscribe__input" required />
+          </div>
+          <!-- /.newsletter__input-group -->
           <button class="subscribe__btn">
             Send
           </button>
@@ -598,7 +603,7 @@
             <div class="reviews-slider__item">
               <fieldset class="reviews-slider__profile">
                 <legend class="reviews-slider__legend-avatar">
-                  <img src="./img/avatar-reviews-1.jpg" alt="" class="reviews-slider__avatar">
+                  <img src="./img/avatar-reviews-1.webp" alt="" class="reviews-slider__avatar">
                 </legend>
                 <h3 class="reviews-slider__username">
                   Megan Fox
@@ -642,7 +647,7 @@
             <div class="reviews-slider__item">
               <fieldset class="reviews-slider__profile">
                 <legend class="reviews-slider__legend-avatar">
-                  <img src="./img/avatar-reviews-2.jpg" alt="" class="reviews-slider__avatar">
+                  <img src="./img/avatar-reviews-2.webp" alt="" class="reviews-slider__avatar">
                 </legend>
                 <h3 class="reviews-slider__username">
                   John Stone
@@ -684,7 +689,7 @@
             <div class="reviews-slider__item">
               <fieldset class="reviews-slider__profile">
                 <legend class="reviews-slider__legend-avatar">
-                  <img src="./img/avatar-reviews-3.jpg" alt="" class="reviews-slider__avatar">
+                  <img src="./img/avatar-reviews-3.webp" alt="" class="reviews-slider__avatar">
                 </legend>
                 <h3 class="reviews-slider__username">
                   Peter Stanbridge
@@ -725,7 +730,7 @@
             <div class="reviews-slider__item">
               <fieldset class="reviews-slider__profile">
                 <legend class="reviews-slider__legend-avatar">
-                  <img src="./img/avatar-reviews-4.jpg" alt="" class="reviews-slider__avatar">
+                  <img src="./img/avatar-reviews-4.webp" alt="" class="reviews-slider__avatar">
                 </legend>
                 <h3 class="reviews-slider__username">
                   Tamzyn French
@@ -767,7 +772,7 @@
             <div class="reviews-slider__item">
               <fieldset class="reviews-slider__profile">
                 <legend class="reviews-slider__legend-avatar">
-                  <img src="./img/avatar-reviews-5.jpg" alt="" class="reviews-slider__avatar">
+                  <img src="./img/avatar-reviews-5.webp" alt="" class="reviews-slider__avatar">
                 </legend>
                 <h3 class="reviews-slider__username">
                   Mia Wong
@@ -830,7 +835,7 @@
       </h2>
       <div class="activities-wrapper">
         <div class="card activities__card">
-          <img src="./img/img-activites-1.png" alt="" class="card__img">
+          <img src="./img/img-activites-1.webp" alt="" class="card__img">
           <h3 class="card__title">
             The curious corner
             of chamarel
@@ -841,7 +846,7 @@
         </div>
         <!-- /.card activities__card -->
         <div class="card activities__card">
-          <img src="./img/img-activites-2.png" alt="" class="card__img">
+          <img src="./img/img-activites-2.webp" alt="" class="card__img">
           <h3 class="card__title">
             Gymkhana club golf
             course
@@ -852,7 +857,7 @@
         </div>
         <!-- /.card activities__card -->
         <div class="card activities__card">
-          <img src="./img/img-activites-3.png" alt="" class="card__img">
+          <img src="./img/img-activites-3.webp" alt="" class="card__img">
           <h3 class="card__title">
             Tamarind falls hiking
             trip - full day
@@ -863,7 +868,7 @@
         </div>
         <!-- /.card activities__card -->
         <div class="card activities__card">
-          <img src="./img/img-activites-4.png" alt="" class="card__img">
+          <img src="./img/img-activites-4.webp" alt="" class="card__img">
           <h3 class="card__title">
             The blue marine discovery
             quest
@@ -994,12 +999,18 @@
           <h3 class="footer__title footer__title--mb-2">
             Send us a message
           </h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input type="text" name="name" class="input footer__input" placeholder="Your Full Name*">
-            <input type="text" name="phone" class="input footer__input" placeholder="Phone Number*">
+          <form action="send.php" method="POST" class="footer__form form">
+            <div class="footer__input-group">
+              <input type="text" name="name" class="input footer__input" placeholder="Your Full Name*" required>
+            </div>
+            <div class="footer__input-group">
+              <input type="tel" name="phone" class="input footer__input" placeholder="Phone Number*" required>
+            </div>
             <textarea class="footer__message" name="message" cols="30" rows="10" placeholder="Message"></textarea>
-            <button class="button footer__button">Send</button>
-            <span class="footer__info">* Required Fields</span>
+            <div class="footer__wrapper-btn">
+              <button class="button footer__button">Send</button>
+              <span class="footer__info">* Required Fields</span>
+            </div>
           </form>
         </div>
         <!-- /.footer__contact-form -->
@@ -1009,7 +1020,7 @@
             <li class="info-doc__item"><a href="#" class="info-doc__link">Conditions of use</a></li>
             <li class="info-doc__item"><a href="#" class="info-doc__link">Cancellation policy</a></li>
           </ul>
-          <img src="./img/img-card.png" alt="" class="info-doc__img-card">
+          <img src="./img/img-card.webp" alt="" class="info-doc__img-card">
         </div>
         <!-- /.footer__copyright -->
       </div>
@@ -1030,10 +1041,10 @@
       <h3 class="modal__title">
         Booking
       </h3>
-      <form action="send.php" method="POST" class="modal__form">
-        <input type="text" name="name" class="input modal__input" placeholder="Your Full Name*">
-        <input type="text" name="phone" class="input modal__input" placeholder="Phone Number*">
-        <input type="text" name="email" class="input modal__input" placeholder="Email*">
+      <form action="send.php" method="POST" class="modal__form form">
+        <input type="text" name="name" class="input modal__input" placeholder="Your Full Name*" required>
+        <input type="tel" name="phone" class="input modal__input" placeholder="Phone Number*" required>
+        <input type="email" name="email" class="input modal__input" placeholder="Email*" required>
         <textarea class="modal__message" name="message" placeholder="Message"></textarea>
         <div class="modal__wrapper-btn">
           <button class="button modal__button">Send</button>

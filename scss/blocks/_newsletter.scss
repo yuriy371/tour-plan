@@ -36,26 +36,36 @@
 			text-transform: uppercase;
 		}
 	}
-	.subscribe {
+	&__input-group {
 		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.subscribe {
+		position: relative;
 		border-radius: 4px;
 		overflow: hidden;
 		min-width: 350px;
 		&__input {
 			width: 100%;
-			padding: 18px 10px 18px 33px;
+			padding: 18px 75px 18px 33px;
 			font-weight: 300;
 			font-size: 14px;
 			line-height: 18px;
+			border-radius: 4px;
 		}
 
 		&__btn {
+			position: absolute;
+			top: 0;
+			right: 0;
 			padding: 20px 18px;
 			font-weight: bold;
 			font-size: 12px;
 			line-height: 15px;
 			background: $primary;
 			color: $light;
+			border-radius: 0 4px 4px 0;
 		}
 	}
 }

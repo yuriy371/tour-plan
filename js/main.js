@@ -22,7 +22,7 @@ const reviewsSlider = new Swiper('.reviews-slider', {
 	},
 });
 
-$('.newsletter').parallax({ imageSrc: './img/bg-news.jpg' });
+$('.newsletter').parallax({ imageSrc: './img/bg-news.webp' });
 
 let menuButton = document.querySelector(".menu-button");
 let modalBtn = $("[data-toggle=modal]");
@@ -58,7 +58,7 @@ let closeModal = (e) => {
 menuButton.addEventListener("click", () => {
 	document.querySelector(".header-menu").classList.toggle("header-menu__visible")
 	document.querySelector("body").classList.toggle("body__hidden")
-});
+}, { passive: true });
 
 modalBtn.on("click", openModal);
 closeModalBtn.on("click", closeModal);
@@ -73,4 +73,30 @@ $(document).on('keydown', (e) => {
 	}
 });
 
+$(".form").each(function () {
+	$(this).validate({
+		errorClass: "invalid",
+		rules: {
+			name: {
+				required: true,
+				minlength: 2
+			}
+		},
+		messages: {
+			name: {
+				required: "Please specify your name",
+				minlength: "The name must be at least 2 characters long",
+			},
+			email: {
+				required: "We need your email address to contact you",
+				email: "Your email address must be in the format of name@domain.com"
+			},
+			phone: {
+				required: "We need your phone number to contact you",
+			}
+		}
+	});
+});
+
+$("[type=tel]").mask('+0 (000) 000-00-00')
 // document.body.contentEditable = true
