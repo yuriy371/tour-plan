@@ -99,4 +99,6 @@ $(".form").each(function () {
 });
 
 $("[type=tel]").mask('+0 (000) 000-00-00')
+
+AOS.init();
 // document.body.contentEditable = true

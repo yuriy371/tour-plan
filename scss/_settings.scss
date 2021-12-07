@@ -16,6 +16,11 @@ body {
 	background: $primary;
 	border-radius: 4px;
 	color: $light;
+	transition: color 0.7s, background 0.7s;
+	&:hover {
+		color: $dark;
+		background: $light;
+	}
 }
 .invalid {
 	color: $primary;

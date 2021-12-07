@@ -197,6 +197,12 @@
 	.container {
 		max-width: 570px;
 	}
+	.button {
+		&:hover {
+			background: $primary;
+			color: $light;
+		}
+	}
 	body {
 		padding: 70px 0 0 0;
 	}
@@ -288,6 +294,9 @@
 				}
 				&:last-child {
 					margin: 0;
+				}
+				&:hover::after {
+					width: 0;
 				}
 			}
 			&__link {
@@ -453,6 +462,11 @@
 	.footer {
 		&__contact-form {
 			grid-column: span 6;
+		}
+		&__link {
+			&:hover::after {
+				width: 0;
+			}
 		}
 	}
 	.modal {

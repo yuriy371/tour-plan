@@ -452,6 +452,13 @@ body {
   background: #ec1f46;
   border-radius: 4px;
   color: #ffffff;
+  -webkit-transition: color 0.7s, background 0.7s;
+  transition: color 0.7s, background 0.7s;
+}
+
+.button:hover {
+  color: #0a223d;
+  background: #ffffff;
 }
 
 .invalid {
@@ -512,6 +519,13 @@ body {
   background: #ec1f46;
 }
 
+.header .search__btn .icon {
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+  margin: 3px 0 0 2px;
+}
+
 .header .user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -556,8 +570,28 @@ body {
   color: #ffffff;
 }
 
+.header-menu__item {
+  position: relative;
+}
+
 .header-menu__item--mobile-visible {
   display: none !important;
+}
+
+.header-menu__item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #ffffff;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.header-menu__item:hover::after {
+  width: 100%;
 }
 
 .header-menu__link {
@@ -1027,7 +1061,7 @@ body {
   top: -33px;
   width: 70px;
   height: 40px;
-  background: url("/img/quote-left.svg") no-repeat;
+  background: url("/img/quote-left.png") no-repeat;
 }
 
 .reviews-slider__profile::after {
@@ -1037,7 +1071,7 @@ body {
   top: 82px;
   width: 70px;
   height: 40px;
-  background: url("/img/quote-right.svg") no-repeat;
+  background: url("/img/quote-right.png") no-repeat;
 }
 
 .reviews-slider__legend-avatar, .reviews-slider__username, .reviews-slider__date, .reviews-slider__rating {
@@ -1496,6 +1530,7 @@ body {
 }
 
 .footer__link {
+  position: relative;
   color: #bdbdbd;
 }
 
@@ -1503,6 +1538,22 @@ body {
   width: 20px;
   height: 20px;
   fill: #bdbdbd;
+}
+
+.footer__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #ffffff;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.footer__link:hover::after {
+  width: 100%;
 }
 
 .footer__social-network {
@@ -1973,6 +2024,10 @@ body {
   .container {
     max-width: 570px;
   }
+  .button:hover {
+    background: #ec1f46;
+    color: #ffffff;
+  }
   body {
     padding: 70px 0 0 0;
   }
@@ -2070,6 +2125,9 @@ body {
   }
   .header-menu__item:last-child {
     margin: 0;
+  }
+  .header-menu__item:hover::after {
+    width: 0;
   }
   .header-menu__link {
     font-size: 12px;
@@ -2242,6 +2300,9 @@ body {
   }
   .footer__contact-form {
     grid-column: span 6;
+  }
+  .footer__link:hover::after {
+    width: 0;
   }
   .modal__dialog {
     padding: 33px 10px;
