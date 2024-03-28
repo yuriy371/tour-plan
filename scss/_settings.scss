@@ -1,0 +1,27 @@
+.container {
+	max-width: 1110px;
+	margin: auto;
+	// padding: 0 15px;
+}
+body {
+	font-family: "Mulish", sans-serif;
+	// font-family: "Nunito", sans-serif;
+	background: $secondary;
+	color: $text-color;
+}
+.body__hidden {
+	overflow: hidden;
+}
+.button {
+	background: $primary;
+	border-radius: 4px;
+	color: $light;
+	transition: color 0.7s, background 0.7s;
+	&:hover {
+		color: $dark;
+		background: $light;
+	}
+}
+.invalid {
+	color: $primary;
+}
